@@ -30,4 +30,8 @@ function dividir(divida) {
   //Divida o valor do saldo.
   return saldoBanco / divida
 
+<<<<<<< HEAD
 } console.log('O valor em conta ao ser dividido é: ' + dividir(2));
+=======
+} console.log('O valor em conta ao ser dividido é: ' + dividir(2));
+>>>>>>> c14d7c5918778bbc069b07917804ff4ae49ce088
