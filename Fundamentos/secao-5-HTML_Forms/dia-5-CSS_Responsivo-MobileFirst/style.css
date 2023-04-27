@@ -65,4 +65,40 @@ body {
   .card:nth-of-type(3) {
     background-color: #41197f;
   }
+/* aparece com mininmo 500px */
+@media (min-width: 500px) {
+  .card:nth-of-type(1){
+    display: block;
+  }
+}
+/* só aparece se o tamanho estiver entre o minimo 600 e no maximo 1000 se
+não atender ela some */
+@media (min-width: 600px) and (max-width: 1000px) {
+  .card:nth-of-type(2){
+    display: block;
+  }
   
+}
+/* As duas faz com que ela aparece apenas com no minimo
+650px e até 1000px */
+@media (min-width: 650px) {
+.card:nth-of-type(3){
+  display: block;
+}
+  
+}
+
+@media (max-width: 1000px) {
+  .card:nth-of-type(3) {
+    display: block;
+  }
+  
+}
+/* ao chamar uma frase <p> para aparecer com no maximo 500px */
+@media (max-width: 500px) {
+  p.trick {
+    /* display: block; */
+    color: black;
+  }
+  
+}
