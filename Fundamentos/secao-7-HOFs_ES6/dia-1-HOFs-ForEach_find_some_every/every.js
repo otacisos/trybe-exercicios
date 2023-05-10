@@ -25,5 +25,5 @@ const people = [
 //Adicione seu código aqui
 const verifyAges = () => people.some((ages) => ages.age >= 18);
 
-console.log(verifyAges(people, 18));
-console.log(verifyAges(people, 14));
+// console.log(verifyAges(people, 18));
+// console.log(verifyAges(people, 14));
