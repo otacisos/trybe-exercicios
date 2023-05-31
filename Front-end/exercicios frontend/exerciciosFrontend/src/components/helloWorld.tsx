@@ -10,9 +10,11 @@ const ages = getAge(ani);
 function HelloWorld() {
   return (
     <div>
-      Óla,
-      {' '}
-      <User />
+      <h1>
+        Óla,
+        {' '}
+        <User />
+      </h1>
       <Title />
       <ModuleDetails />
       <p>{`Age ${ages}`}</p>

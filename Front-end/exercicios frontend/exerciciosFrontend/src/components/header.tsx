@@ -5,7 +5,6 @@ function Header() {
     <header>
       <h1>
         Olá,
-        {' '}
         <User />
       </h1>
     </header>
