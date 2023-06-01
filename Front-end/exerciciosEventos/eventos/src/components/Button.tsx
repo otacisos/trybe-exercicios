@@ -1,8 +1,13 @@
 // /src/components/Button.tsx
 
 function Button() {
+  function handleClick() {
+    alert('Meu primeiro event handler com React');
+  }
+
   return (
-    <button>
+
+    <button onClick={ handleClick }>
       Clique em mim!
     </button>
   );
