@@ -19,8 +19,8 @@ const book2 = {
 const book3 = {
   title: 'clean code',
   pages: 92,
-  isRead: true,
-  isFavorite: true,
+  isRead: false,
+  isFavorite: false,
 };
 
 function App() {
@@ -29,9 +29,15 @@ function App() {
       <HelloWorld />
       <p>Meus livros:</p>
       <ul>
-        <li>✅ ⏳ Nome (X páginas) 🥰🥰</li>
+        {/* <li>✅ ⏳ Nome (X páginas) 🥰🥰🥰</li> */}
         <Book
           book={ book1 }
+        />
+        <Book
+          book={ book2 }
+        />
+        <Book
+          book={ book3 }
         />
       </ul>
       <Footer />

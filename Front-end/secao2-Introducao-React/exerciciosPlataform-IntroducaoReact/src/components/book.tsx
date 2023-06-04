@@ -1,24 +1,3 @@
-// type BookProps = {
-//   book: {
-//     title: string
-//     pages: number
-//     isRead: boolean,
-//     isFavorite: boolean
-//   }
-
-// };
-
-// function Book({ book }: BookProps) {
-//   return (
-//     <li>
-//       {book.title}
-//       {' '}
-//       {book.pages}
-//     </li>
-//   );
-// }
-
-// export default Book;
 type BookProps = {
   book:{
     title: string,
@@ -31,9 +10,14 @@ type BookProps = {
 function Book({ book } : BookProps) {
   return (
     <li>
+      <span>{book.isRead ? '✅ ' : '⏳ '}</span>
+      {' '}
       <span>
-        {`${book.title} ${book.pages} páginas`}
+        {`${book.title} (${book.pages} páginas)`}
       </span>
+      {' '}
+      {/* <span>{book.isFavorite ? ' 🥰' : ''}</span> */}
+      <span>{book.isFavorite && <span>🥰</span> }</span>
     </li>
   );
 }
