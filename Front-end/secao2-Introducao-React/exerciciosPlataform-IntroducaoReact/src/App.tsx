@@ -29,7 +29,7 @@ function App() {
       <HelloWorld />
       <p>Meus livros:</p>
       <ul>
-        <li>✅ ⏳ ampuleta Nome (X páginas) 🥰🥰</li>
+        <li>✅ ⏳ Nome (X páginas) 🥰🥰</li>
         <Book
           book={ book1 }
         />
